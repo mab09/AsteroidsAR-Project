@@ -130,9 +130,4 @@ public class UFO : MonoBehaviour
         StartCooldown();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

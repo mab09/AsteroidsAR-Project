@@ -881,7 +881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentState: 0
   _trajectoryVectors: []
-  _trajectoriesPerSpawn: 3
+  _trajectoriesPerSpawn: 5
   _spawnDistanceFromPlayer: 20
   _xyOffset: 10
   _movementSpeed: 2
@@ -981,18 +981,6 @@ MonoBehaviour:
   OnZeroHealth:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1274036609}
-        m_TargetAssemblyTypeName: UFO, Assembly-CSharp
-        m_MethodName: Die
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1274036614}
         m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
         m_MethodName: CreateNewObject
@@ -1013,6 +1001,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 200
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1274036609}
+        m_TargetAssemblyTypeName: UFO, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   _objectToCreate: {fileID: 5231885511966891613, guid: d69686b60e679394680b1e11fe9bb56c,
     type: 3}
   _useSpawnPoint: 0
-  _chance: 0.3
+  _chance: 0.5
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
   _randomizeInitialPositon: 0
