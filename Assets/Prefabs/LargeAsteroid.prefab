@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2803614757079067559}
   - component: {fileID: 1723056626393532380}
   - component: {fileID: 8684968028216889492}
+  - component: {fileID: 4137209280408231999}
   m_Layer: 0
   m_Name: LargeAsteroid
   m_TagString: Enemy
@@ -78,7 +79,19 @@ MonoBehaviour:
   _destroyDelay: 0
   OnDestroy:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4137209280408231999}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: CreateNewObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8684968028216889492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +105,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destroyDelay: 60
+--- !u!114 &4137209280408231999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156626136915591850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8c216f85f616b479736e76c5b9f196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToCreate: {fileID: 8474367398425114459, guid: c9f5f6472a4c12844a2633b7f91a502d,
+    type: 3}
+  _useSpawnPoint: 0
+  _chance: 1
+  _referenceObjectRotation: {fileID: 0}
+  _amountOfObjects: 2
+  _randomizeInitialPositon: 1
+  _xRandomizationFactor: 1
+  _yRandomizationFactor: 1
+  _zRandomizationFactor: 1
 --- !u!1001 &4459949306761988471
 PrefabInstance:
   m_ObjectHideFlags: 0
