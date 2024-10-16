@@ -28,6 +28,8 @@ public class UFO : MonoBehaviour
     [SerializeField] private UnityEvent OnStopAttacking;
     [SerializeField] private UnityEvent OnDie;
 
+    [SerializeField] private AudioSfx _ufoOnScene;
+
     public UFOStates CurrentState
     {
         get => _currentState;
@@ -76,6 +78,7 @@ public class UFO : MonoBehaviour
     public void StartCooldown()
     {
         StartCoroutine(IdleRoutine());
+        _ufoOnScene.StopAudio();
     }
 
     private Vector3 GetNewPositionVector()
@@ -97,6 +100,8 @@ public class UFO : MonoBehaviour
         {
             _trajectoryVectors.Add(GetNewPositionVector());
         }
+
+        _ufoOnScene.PlayAudio(gameObject);
 
         StartCoroutine(AttackMovement());
     }
@@ -128,6 +133,7 @@ public class UFO : MonoBehaviour
 
         StopAllCoroutines();
         StartCooldown();
+        _ufoOnScene.StopAudio();
     }
 
 }

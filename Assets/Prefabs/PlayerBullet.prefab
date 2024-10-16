@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 59991649135153328}
   - component: {fileID: 2195989028522341902}
   - component: {fileID: 6532833569955720654}
+  - component: {fileID: 4030473491202563901}
   m_Layer: 0
   m_Name: PlayerBullet
   m_TagString: Player
@@ -175,6 +176,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4030473491202563901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2392384709878035473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8be4fd79506ad46b729ea7f7d09c40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSfx: {fileID: 11400000, guid: ef090b958aa2eed45ab278fa5cd9767f, type: 2}
 --- !u!1001 &2392384708808325553
 PrefabInstance:
   m_ObjectHideFlags: 0
