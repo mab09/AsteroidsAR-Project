@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6399622749441126547}
   - component: {fileID: 8054367813872166214}
   - component: {fileID: 3837028789541837930}
+  - component: {fileID: 176884954591770179}
+  - component: {fileID: 2499363520014863092}
   m_Layer: 0
   m_Name: SmallAsteroid
   m_TagString: Enemy
@@ -61,6 +63,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 1.1
+--- !u!114 &176884954591770179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186386454412334389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc95c201040028e4994496d0ae4306a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroyDelay: 0.1
+  OnDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2499363520014863092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5186386454412334389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5615103344510ba4f96395e86106cd84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _destroyDelay: 60
 --- !u!1001 &4396015653262621441
 PrefabInstance:
   m_ObjectHideFlags: 0
