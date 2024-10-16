@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5615103344510ba4f96395e86106cd84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destroyDelay: 30
+  _destroyDelay: 10
 --- !u!136 &7548457662992967327
 CapsuleCollider:
   m_ObjectHideFlags: 0

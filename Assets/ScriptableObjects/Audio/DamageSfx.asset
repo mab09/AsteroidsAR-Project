@@ -16,8 +16,8 @@ MonoBehaviour:
     AudioName: PlayerHit
     AudioClips:
     - {fileID: 8300000, guid: b4a13eacc0f9f49798b5be579de2c12c, type: 3}
-    Volume: 0.5
-    Pitch: 0.5
+    Volume: 0.2
+    Pitch: 1
     Loop: 0
     StartDelay: 0
     SpatialBlend: 1

@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
@@ -42,4 +43,10 @@ public class UIController : MonoBehaviour
         _gameOverScreen.SetActive(true);
         _finalScoreText.text = $"Score: {_gameState.Score}";
     }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
