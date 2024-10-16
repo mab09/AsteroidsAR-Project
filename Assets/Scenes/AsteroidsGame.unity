@@ -842,6 +842,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1274036610}
   - component: {fileID: 1274036609}
+  - component: {fileID: 1274036612}
+  - component: {fileID: 1274036613}
+  - component: {fileID: 1274036614}
   - component: {fileID: 1274036611}
   - component: {fileID: 1274036608}
   m_Layer: 0
@@ -900,6 +903,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1274036612}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnStopAttacking:
     m_PersistentCalls:
       m_Calls:
@@ -907,6 +922,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UFO, Assembly-CSharp
         m_MethodName: StartCooldown
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1274036612}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -966,9 +993,105 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1274036614}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: CreateNewObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: b36045da813e5af439fdc4f3e4847e43, type: 2}
+        m_TargetAssemblyTypeName: GameState, Assembly-CSharp
+        m_MethodName: IncreaseScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 200
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnReceiveHealth:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1274036612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274036607}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc7c3be5a104e649b78f5bdc9f9a5b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireCooldownTime: 1
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1274036613}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: CreateNewObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1274036613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274036607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8c216f85f616b479736e76c5b9f196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToCreate: {fileID: 7548457662992967313, guid: ee1189e221a6e7e4aabfe7f32fa899ae,
+    type: 3}
+  _useSpawnPoint: 0
+  _chance: 1
+  _referenceObjectRotation: {fileID: 0}
+  _amountOfObjects: 1
+  _randomizeInitialPositon: 0
+  _xRandomizationFactor: 1
+  _yRandomizationFactor: 1
+  _zRandomizationFactor: 1
+--- !u!114 &1274036614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274036607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8c216f85f616b479736e76c5b9f196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToCreate: {fileID: 5231885511966891613, guid: d69686b60e679394680b1e11fe9bb56c,
+    type: 3}
+  _useSpawnPoint: 0
+  _chance: 0.3
+  _referenceObjectRotation: {fileID: 0}
+  _amountOfObjects: 1
+  _randomizeInitialPositon: 0
+  _xRandomizationFactor: 1
+  _yRandomizationFactor: 1
+  _zRandomizationFactor: 1
 --- !u!1 &1650037958
 GameObject:
   m_ObjectHideFlags: 0
