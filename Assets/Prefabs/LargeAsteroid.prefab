@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1723056626393532380}
   - component: {fileID: 8684968028216889492}
   - component: {fileID: 4137209280408231999}
+  - component: {fileID: 3626591022932850715}
   - component: {fileID: 6731731509430552490}
   - component: {fileID: 3642429311846610367}
   - component: {fileID: 8461874806218163338}
@@ -92,6 +93,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1723056626393532380}
         m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
         m_MethodName: DestroyWithDelay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3626591022932850715}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: CreateNewObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -205,6 +218,28 @@ MonoBehaviour:
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 2
   _randomizeInitialPositon: 1
+  _xRandomizationFactor: 1
+  _yRandomizationFactor: 1
+  _zRandomizationFactor: 1
+--- !u!114 &3626591022932850715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156626136915591850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8c216f85f616b479736e76c5b9f196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToCreate: {fileID: 4883531707986063550, guid: 6a26c33c8723a264197a68f770ec040c,
+    type: 3}
+  _useSpawnPoint: 0
+  _chance: 1
+  _referenceObjectRotation: {fileID: 0}
+  _amountOfObjects: 1
+  _randomizeInitialPositon: 0
   _xRandomizationFactor: 1
   _yRandomizationFactor: 1
   _zRandomizationFactor: 1

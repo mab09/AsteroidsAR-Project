@@ -15,7 +15,7 @@ MonoBehaviour:
   AudioParameters:
     AudioName: PlayerShoot
     AudioClips:
-    - {fileID: 8300000, guid: 4b8ecfa2338e24fc985f741be6fcfa4a, type: 3}
+    - {fileID: 8300000, guid: 372d37e280d9c4f8498b18d629990ba0, type: 3}
     Volume: 0.5
     Pitch: 0.5
     Loop: 0
