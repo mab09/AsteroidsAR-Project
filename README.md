@@ -28,7 +28,7 @@ AsteroidsAR is an AR version of the classic arcade game Asteroids, developed as 
 - **Sound Effects:** Sourced from [Arcade SFX Free](https://assetstore.unity.com/packages/audio/sound-fx/arcade-sfx-free-42983) on the Unity Asset Store.
 - **Particle Effects:** Sourced from [Hit Impact Effects Free](https://assetstore.unity.com/packages/vfx/particles/hit-impact-effects-free-218385) on the Unity Asset Store.
 
-AsteroidsAR is an immersive AR experiences, integrating advanced coding techniques and enhancing user interaction with thoughtful UI and gameplay elements.
+AsteroidsAR is an immersive AR experience, integrating advanced coding techniques and enhancing user interaction with thoughtful UI and gameplay elements.
 
 Made in Unity 2021.3.1f1<br />
 Tested on Moto Razr+, Android version: 14.
