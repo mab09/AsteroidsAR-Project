@@ -598,26 +598,14 @@ GameObject:
   - component: {fileID: 504450937}
   - component: {fileID: 504450936}
   - component: {fileID: 504450935}
-  - component: {fileID: 504450934}
+  - component: {fileID: 504450941}
   m_Layer: 5
-  m_Name: DamageRed
+  m_Name: ScreenTinter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &504450934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504450933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0d923e0ef3d9747887f773b69dbe8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &504450935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +725,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &504450941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504450933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c5316c64095136449b25332936f36f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &635905237 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 881042724531827032, guid: d33ff72dc8272034095fb161f94aac88,
@@ -1877,8 +1877,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 504450934}
-        m_TargetAssemblyTypeName: DamageRed, Assembly-CSharp
+      - m_Target: {fileID: 504450941}
+        m_TargetAssemblyTypeName: ScreenTinter, Assembly-CSharp
         m_MethodName: OnDamage
         m_Mode: 1
         m_Arguments:
@@ -1931,12 +1931,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 504450941}
+        m_TargetAssemblyTypeName: ScreenTinter, Assembly-CSharp
+        m_MethodName: OnHeal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnReceivePowerUp:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1650037968}
         m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
         m_MethodName: CreateNewObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 504450941}
+        m_TargetAssemblyTypeName: ScreenTinter, Assembly-CSharp
+        m_MethodName: OnPowerUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
