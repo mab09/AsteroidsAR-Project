@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 5231885511966891617}
   - component: {fileID: 5231885511966891618}
   - component: {fileID: 3083233920610250031}
-  - component: {fileID: 858865058057188101}
   m_Layer: 0
-  m_Name: MysteryBox
+  m_Name: MysteryBoxHealth
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,18 +116,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 858865058057188101}
-        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
-        m_MethodName: CreateNewObject
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &5231885511966891618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,30 +145,7 @@ MonoBehaviour:
     type: 3}
   _useSpawnPoint: 0
   _isChild: 0
-  _chance: 0.8
-  _referenceObjectRotation: {fileID: 0}
-  _amountOfObjects: 1
-  _randomizeInitialPositon: 0
-  _xRandomizationFactor: 1
-  _yRandomizationFactor: 1
-  _zRandomizationFactor: 1
---- !u!114 &858865058057188101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5231885511966891613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8c216f85f616b479736e76c5b9f196, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectToCreate: {fileID: 5732218040166089180, guid: e163160dde066fe43a56a87f181ac6c5,
-    type: 3}
-  _useSpawnPoint: 0
-  _isChild: 0
-  _chance: 0.5
+  _chance: 1
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
   _randomizeInitialPositon: 0

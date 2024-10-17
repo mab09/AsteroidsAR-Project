@@ -1069,6 +1069,7 @@ GameObject:
   - component: {fileID: 1274036612}
   - component: {fileID: 1274036613}
   - component: {fileID: 1274036614}
+  - component: {fileID: 1274036616}
   - component: {fileID: 1274036615}
   - component: {fileID: 1274036611}
   - component: {fileID: 1274036608}
@@ -1231,6 +1232,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1274036616}
+        m_TargetAssemblyTypeName: CreateObject, Assembly-CSharp
+        m_MethodName: CreateNewObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 11400000, guid: b36045da813e5af439fdc4f3e4847e43, type: 2}
         m_TargetAssemblyTypeName: GameState, Assembly-CSharp
         m_MethodName: IncreaseScore
@@ -1328,7 +1341,7 @@ MonoBehaviour:
     type: 3}
   _useSpawnPoint: 0
   _isChild: 0
-  _chance: 0.75
+  _chance: 0.5
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
   _randomizeInitialPositon: 0
@@ -1352,6 +1365,29 @@ MonoBehaviour:
   _useSpawnPoint: 0
   _isChild: 0
   _chance: 1
+  _referenceObjectRotation: {fileID: 0}
+  _amountOfObjects: 1
+  _randomizeInitialPositon: 0
+  _xRandomizationFactor: 1
+  _yRandomizationFactor: 1
+  _zRandomizationFactor: 1
+--- !u!114 &1274036616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274036607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8c216f85f616b479736e76c5b9f196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectToCreate: {fileID: 5231885511966891613, guid: fa2737247a14d6d45b376c2274097756,
+    type: 3}
+  _useSpawnPoint: 0
+  _isChild: 0
+  _chance: 0.5
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
   _randomizeInitialPositon: 0
