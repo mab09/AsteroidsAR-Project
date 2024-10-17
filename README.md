@@ -9,9 +9,9 @@ AsteroidsAR is an AR version of the classic arcade game Asteroids, developed as 
 - **AR Integration:** Utilizes the phone camera to create an immersive augmented reality experience.
 - **Gameplay Mechanics:** Players shoot asteroids before they hit Earth, with large asteroids breaking into smaller ones, increasing the challenge and points.
 - **Enemy UFOs:** Occasionally appearing UFOs shoot at the player. Successfully destroying them grants health pickups, weapon upgrades, or both.
-- **User Interface:**
-  - **_HUD:_** Includes a crosshair for aiming, a health bar for the player and Earth, and screen tints for damage (red), health pickups (green), and weapon upgrades (purple).
-  - **_Sound and Particle Effects:_** Enhance the gameplay experience with various sound effects for shooting, explosions, and upgrades, along with visual explosions for asteroid destruction.
+- **User Interface:** Title screen, gameover screen and HUD that includes a crosshair for aiming, a health bar for the player and Earth, and screen tints for damage (red), health pickups (green), and weapon upgrades (purple).
+- **Sound and Particle Effects:** Enhance the gameplay experience with various sound effects for shooting, explosions, and upgrades, along with visual explosions for asteroid destruction.
+- **Target Platform:** AR-enabled Android devices.
    
 ## Techniques and Coding
 - **Scriptable Objects:** Utilized to maintain game state.
