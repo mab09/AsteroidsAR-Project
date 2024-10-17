@@ -1,6 +1,8 @@
 # AsteroidsAR: A Classic Arcade Game Reimagined in Augmented Reality
 <img src="https://github.com/user-attachments/assets/41829b1e-c963-45bb-b66f-f69584f50c5d" width=50% height=50%>
 
+[AsteroidsAR Demo](https://youtu.be/ygL5PjM235U)
+
 AsteroidsAR is an AR version of the classic arcade game Asteroids, developed as a course project for the Meta AR Developer Certification. This engaging application allows players to defend Earth against incoming asteroids using their phone camera and aiming skills.
 
 ## Key Features
@@ -27,3 +29,7 @@ AsteroidsAR is an AR version of the classic arcade game Asteroids, developed as 
 - **Particle Effects:** Sourced from [Hit Impact Effects Free](https://assetstore.unity.com/packages/vfx/particles/hit-impact-effects-free-218385) on the Unity Asset Store.
 
 AsteroidsAR is an immersive AR experiences, integrating advanced coding techniques and enhancing user interaction with thoughtful UI and gameplay elements.
+
+
+Made in Unity 2021.3.1f1
+Tested on Moto Razr+, Android version: 14.
