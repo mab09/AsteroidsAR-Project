@@ -30,6 +30,5 @@ AsteroidsAR is an AR version of the classic arcade game Asteroids, developed as 
 
 AsteroidsAR is an immersive AR experiences, integrating advanced coding techniques and enhancing user interaction with thoughtful UI and gameplay elements.
 
-
-Made in Unity 2021.3.1f1
+Made in Unity 2021.3.1f1<br />
 Tested on Moto Razr+, Android version: 14.
