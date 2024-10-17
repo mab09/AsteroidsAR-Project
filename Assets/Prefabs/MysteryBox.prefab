@@ -158,7 +158,7 @@ MonoBehaviour:
     type: 3}
   _useSpawnPoint: 0
   _isChild: 0
-  _chance: 0.9
+  _chance: 0.8
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
   _randomizeInitialPositon: 0

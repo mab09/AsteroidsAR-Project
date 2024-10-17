@@ -1328,7 +1328,7 @@ MonoBehaviour:
     type: 3}
   _useSpawnPoint: 0
   _isChild: 0
-  _chance: 0.5
+  _chance: 0.75
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
   _randomizeInitialPositon: 0
@@ -2123,6 +2123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fff3b719dcf3a8418840e33f83dbe8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: {x: 0, y: 1, z: 0}
+  _speed: {x: 0, y: 0, z: 1}
   _randomizeInitialRotation: 0
   _randomizationFactor: 1

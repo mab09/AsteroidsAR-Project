@@ -34,11 +34,9 @@ public class ScreenTinter : MonoBehaviour
 
     IEnumerator GreenHealRoutine()
     {
-        _lock = true;
         gameObject.GetComponent<Image>().color = new Color(0.0f, 1.0f, 0.0f, 0.05f);
         yield return new WaitForSeconds(0.5f);
         if(!_lock) gameObject.GetComponent<Image>().color = Color.clear;
-        _lock = false;
     }
 
     IEnumerator PurplePowerRoutine()
