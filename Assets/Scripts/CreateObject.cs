@@ -7,6 +7,7 @@ public class CreateObject : MonoBehaviour
     [SerializeField] private GameObject _objectToCreate;
     private Transform _spawnPoint;
     [SerializeField] private bool _useSpawnPoint;
+    [SerializeField] private bool _isChild;
     [Range(0, 1)][SerializeField] private float _chance = 1;
     [SerializeField] private Transform _referenceObjectRotation;
     private Quaternion _objectRotation;
@@ -26,6 +27,11 @@ public class CreateObject : MonoBehaviour
                 if (_useSpawnPoint)
                 {
                     GameObject clone = Instantiate(_objectToCreate, _spawnPoint.position, _objectRotation);
+                    clone.name = $"{clone.name} {clone.GetInstanceID()}";
+                }
+                else if(_isChild)
+                {
+                    GameObject clone = Instantiate(_objectToCreate, transform);
                     clone.name = $"{clone.name} {clone.GetInstanceID()}";
                 }
                 else

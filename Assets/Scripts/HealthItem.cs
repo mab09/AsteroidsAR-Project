@@ -18,7 +18,7 @@ public class HealthItem : MonoBehaviour
             if (other.TryGetComponent(out Health health)) 
             { 
 
-                health.GainHealth(_healingPower);
+                health.GainHealthandPowerUp(_healingPower);
                 OnHeal?.Invoke();
 
             }

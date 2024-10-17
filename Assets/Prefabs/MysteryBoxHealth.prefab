@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5231885511966891618}
   - component: {fileID: 3083233920610250031}
   m_Layer: 0
-  m_Name: MysteryBox
+  m_Name: MysteryBoxHealth
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,6 +85,9 @@ MonoBehaviour:
   OnReceiveHealth:
     m_PersistentCalls:
       m_Calls: []
+  OnReceivePowerUp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5231885511966891617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +144,7 @@ MonoBehaviour:
   _objectToCreate: {fileID: 5732218040166089180, guid: ec553314bb7f15146a0b609b0a211da8,
     type: 3}
   _useSpawnPoint: 0
+  _isChild: 0
   _chance: 1
   _referenceObjectRotation: {fileID: 0}
   _amountOfObjects: 1
