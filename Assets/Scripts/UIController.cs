@@ -43,10 +43,4 @@ public class UIController : MonoBehaviour
         _gameOverScreen.SetActive(true);
         _finalScoreText.text = $"Score: {_gameState.Score}";
     }
-
-    public void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
 }
