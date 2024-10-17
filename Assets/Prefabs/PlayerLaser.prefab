@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2392384709878035474}
-  - component: {fileID: 3482338472428091309}
   - component: {fileID: 5952946058184684720}
   - component: {fileID: 7152679479500456841}
   - component: {fileID: 4271879754992664649}
@@ -18,8 +17,8 @@ GameObject:
   - component: {fileID: 6532833569955720654}
   - component: {fileID: 4030473491202563901}
   m_Layer: 0
-  m_Name: PlayerBullet
-  m_TagString: Untagged
+  m_Name: PlayerLaser
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,27 +31,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2392384709878035473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 12}
+  m_LocalScale: {x: 2, y: 2, z: 60}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2790486066092957274}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3482338472428091309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2392384709878035473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a523a366ec3b7754d9662bf3f2623d06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 10
 --- !u!114 &5952946058184684720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,26 +51,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dec285f993af1469ac72e9fd848954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 1
-  _currentHealth: 1
+  _maxHealth: 100
+  _currentHealth: 100
   OnReceiveDamage:
     m_PersistentCalls:
       m_Calls: []
   OnZeroHealth:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4271879754992664649}
-        m_TargetAssemblyTypeName: DestroyObject, Assembly-CSharp
-        m_MethodName: DestroyWithDelay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnReceiveHealth:
     m_PersistentCalls:
       m_Calls: []
@@ -191,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8be4fd79506ad46b729ea7f7d09c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSfx: {fileID: 11400000, guid: ef090b958aa2eed45ab278fa5cd9767f, type: 2}
+  _audioSfx: {fileID: 11400000, guid: 3706b84182cd99b498a88da3a02c3e30, type: 2}
 --- !u!1001 &2392384708808325553
 PrefabInstance:
   m_ObjectHideFlags: 0

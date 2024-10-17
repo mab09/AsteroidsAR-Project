@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     [SerializeField] private UnityEvent<int> OnReceiveDamage;
     [SerializeField] private UnityEvent OnZeroHealth;
     [SerializeField] private UnityEvent<int> OnReceiveHealth;
+    [SerializeField] private UnityEvent OnReceivePowerUp;
 
     private void Start()
     {
@@ -38,11 +39,19 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void GainHealth(int gainAmount)
+    public void GainHealthandPowerUp(int gainAmount)    //if gainAmount is negative, then its a powerUp
     {
-        _currentHealth += gainAmount;
-        _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
-        OnReceiveHealth?.Invoke(_currentHealth);
+
+        if (gainAmount < 0)
+        {
+            OnReceivePowerUp?.Invoke();
+        }
+        else
+        {
+            _currentHealth += gainAmount;
+            _currentHealth = Mathf.Clamp(_currentHealth, 0, _maxHealth);
+            OnReceiveHealth?.Invoke(_currentHealth);
+        }
     }
 
 
