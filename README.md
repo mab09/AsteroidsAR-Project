@@ -1,4 +1,5 @@
 # AsteroidsAR: A Classic Arcade Game Reimagined in Augmented Reality
+<img src="https://github.com/user-attachments/assets/41829b1e-c963-45bb-b66f-f69584f50c5d" width=50% height=50%>
 
 AsteroidsAR is an AR version of the classic arcade game Asteroids, developed as a course project for the Meta AR Developer Certification. This engaging application allows players to defend Earth against incoming asteroids using their phone camera and aiming skills.
 
